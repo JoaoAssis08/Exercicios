@@ -1,56 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
     <style>
-        fieldset{
-            padding: 15px;
-            margin: 15px;
-            margin-left: 0px;
-        }
+      fieldset {
+        padding: 15px;
+        margin: 15px;
+        margin-left: 0px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Exercicio de Formulario</h1>
     <form action="" method="get">
-    <fieldset>
+      <fieldset>
         <legend>Dados Pessoais</legend>
         <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" max="30" required autocomplete="name" placeholder="Nome completo">
+          <label for="inome">Nome: </label>
+          <input
+            type="text"
+            name="nome"
+            id="inome"
+            max="30"
+            required
+            autocomplete="name"
+            placeholder="Nome completo"
+          />
         </p>
         <p>
-            <label for="iemail">Email: </label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
+          <label for="iemail">Email: </label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            required
+            autocomplete="email"
+          />
         </p>
         <p>
-            <label for="isenha">Senha: </label>
-            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" placeholder="Minimo 8 caracteres">
+          <label for="isenha">Senha: </label>
+          <input
+            type="password"
+            name="senha"
+            id="isenha"
+            required
+            minlength="8"
+            maxlength="15"
+            placeholder="Minimo 8 caracteres"
+          />
         </p>
-    </fieldset>
+      </fieldset>
 
-    <fieldset>
+      <fieldset>
         <legend>Informações Adicionais</legend>
         <p>
-            <label for="idata">Data de Nacimento: </label>
-            <input type="date" name="data" id="idata">
+          <label for="idata">Data de Nacimento: </label>
+          <input type="date" name="data" id="idata" />
         </p>
         <p>
-            <label for="isexo">Sexo: </label><br>
-            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label><br>
-            <input type="radio" name="sexo" id="ifemi" value="F"><label for="ifemi">Feminino</label><br>
-            <input type="radio" name="sexo" id="ioutro" value="O"><label for="ioutro">Outro</label><br>
-    </fieldset>
-    <fieldset>
+          <label for="isexo">Sexo: </label><br />
+          <input type="radio" name="sexo" id="imasc" value="M" /><label
+            for="imasc"
+            >Masculino</label
+          ><br />
+          <input type="radio" name="sexo" id="ifemi" value="F" /><label
+            for="ifemi"
+            >Feminino</label
+          ><br />
+          <input type="radio" name="sexo" id="ioutro" value="O" /><label
+            for="ioutro"
+            >Outro</label
+          ><br />
+        </p>
+      </fieldset>
+      <fieldset>
         <legend>Marque seus interesses</legend>
-        <input type="checkbox" name="jogos" id="ijogos"><label for="ijogos">Jogos</label><br>
-        <input type="checkbox" name="programação" id="iprogram"><label for="iprogram">Programação</label><br>
-        <input type="checkbox" name="musica" id="imusica"><label for="imusica">Musica</label>
-    </fieldset>
-    <input type="submit">
-    <input type="reset">
+        <input type="checkbox" name="jogos" id="ijogos" /><label for="ijogos"
+          >Jogos</label
+        ><br />
+        <input type="checkbox" name="programação" id="iprogram" /><label
+          for="iprogram"
+          >Programação</label
+        ><br />
+        <input type="checkbox" name="musica" id="imusica" /><label for="imusica"
+          >Musica</label
+        >
+      </fieldset>
+      <input type="submit" />
+      <input type="reset" />
     </form>
-</body>
+  </body>
 </html>
